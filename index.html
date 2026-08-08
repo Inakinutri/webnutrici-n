@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iñaki Silvosa · Dietista-Nutricionista · Sevilla</title>
+<title>Iñaki Silvosa · Dietista Titulado · Sevilla</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
@@ -236,59 +236,6 @@ nav.scrolled{background:rgba(248,247,243,.9);backdrop-filter:blur(20px);box-shad
 /* ── TESTIMONIOS ── */
 .testi-section{padding:8rem 5vw;background:var(--c-bg)}
 .testi-header{max-width:600px;margin:0 auto 5rem;text-align:center}
-
-/* TXEMA — caso de estudio completo */
-.case-study{max-width:1100px;margin:0 auto 6rem;opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.case-study.visible{opacity:1;transform:translateY(0)}
-/* Cabecera del caso */
-.case-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--c-border)}
-.case-identity{display:flex;align-items:center;gap:1rem}
-.case-av{width:56px;height:56px;border-radius:50%;background:var(--c-green-dark);display:flex;align-items:center;justify-content:center;font-family:var(--ff-d);font-size:1.5rem;color:#fff}
-.case-name{font-family:var(--ff-d);font-size:1.5rem;color:var(--c-green-dark);line-height:1}
-.case-meta{font-size:.8rem;color:var(--c-text-muted);margin-top:.25rem}
-.case-stars{display:flex;gap:3px}
-.case-stars span{color:var(--c-accent);font-size:1rem}
-/* Resultados pill bar */
-.case-results{display:grid;grid-template-columns:repeat(4,1fr);gap:.875rem;margin-bottom:2rem}
-.case-result{background:var(--c-surface);border:1px solid var(--c-border);border-radius:1.25rem;padding:1.125rem 1rem;text-align:center;transition:box-shadow .3s,transform .3s var(--ease),border-color .3s}
-.case-result:hover{box-shadow:0 12px 40px rgba(26,58,42,.1);transform:translateY(-3px);border-color:rgba(45,106,74,.2)}
-.case-result:first-child{background:var(--c-green-dark);border-color:var(--c-green-dark)}
-.case-result:first-child .cr-val,.case-result:first-child .cr-lbl{color:#fff}
-.case-result:first-child .cr-lbl{color:rgba(255,255,255,.6)}
-.cr-val{font-family:var(--ff-d);font-size:1.75rem;color:var(--c-green-dark);line-height:1;letter-spacing:-.02em}
-.cr-lbl{font-size:.73rem;color:var(--c-text-muted);margin-top:.3rem}
-/* Layout principal del caso */
-.case-body{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-/* Slider antes/después */
-.slider-wrap{position:relative;border-radius:1.5rem;overflow:hidden;aspect-ratio:3/4;cursor:col-resize;user-select:none;box-shadow:0 30px 80px rgba(26,58,42,.18)}
-.slider-img{position:absolute;inset:0;width:100%;height:100%}
-.slider-img img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-.slider-img.after{clip-path:inset(0 50% 0 0);transition:clip-path 0s}
-.slider-divider{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;box-shadow:0 0 12px rgba(0,0,0,.4);z-index:10;pointer-events:none}
-.slider-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;box-shadow:0 4px 20px rgba(0,0,0,.3);z-index:11;display:flex;align-items:center;justify-content:center;pointer-events:none;font-size:.9rem}
-.slider-label{position:absolute;top:1rem;z-index:5;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;padding:.3rem .75rem;border-radius:100px;backdrop-filter:blur(8px)}
-.slider-label.before{left:1rem;background:rgba(26,58,42,.8)}
-.slider-label.after-lbl{right:1rem;background:rgba(244,124,58,.9)}
-/* Lado derecho: cita + WhatsApp */
-.case-right{display:flex;flex-direction:column;gap:1.5rem}
-.case-quote-block{background:var(--c-surface);border:1px solid var(--c-border);border-radius:1.5rem;padding:2rem;flex:1}
-.case-quote-mark{font-family:var(--ff-d);font-size:3rem;color:var(--c-green-light);line-height:.8;margin-bottom:.5rem}
-.case-quote-text{font-family:var(--ff-d);font-style:italic;font-size:1.0625rem;color:var(--c-text-muted);line-height:1.7}
-/* WhatsApp integrado */
-.wapp-thread{background:var(--c-surface);border:1px solid var(--c-border);border-radius:1.5rem;overflow:hidden}
-.wapp-bar{background:#1a3a2a;padding:.75rem 1.25rem;display:flex;align-items:center;gap:.75rem}
-.wapp-bar-av{width:32px;height:32px;border-radius:50%;background:var(--c-green-mid);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff}
-.wapp-bar-name{font-size:.875rem;font-weight:500;color:#fff}
-.wapp-bar-status{font-size:.68rem;color:rgba(255,255,255,.5);margin-top:.1rem}
-.wapp-msgs{padding:1rem;display:flex;flex-direction:column;gap:.75rem;background:#f0ece4}
-.wapp-msg{max-width:88%;padding:.625rem .875rem;border-radius:1rem;font-size:.875rem;line-height:1.5;position:relative}
-.wapp-msg.received{background:#fff;border-radius:.25rem 1rem 1rem 1rem;align-self:flex-start;color:var(--c-text);box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.wapp-msg.sent{background:#d9fdd3;border-radius:1rem 1rem .25rem 1rem;align-self:flex-end;color:var(--c-text);box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.wapp-msg-time{font-size:.63rem;color:rgba(0,0,0,.35);margin-top:.3rem;text-align:right}
-.wapp-screenshot{border-top:1px solid var(--c-border)}
-.wapp-screenshot img{width:100%;display:block}
-
-/* OTROS TESTIMONIOS */
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1100px;margin:0 auto}
 .tc{background:var(--c-surface);border:1px solid var(--c-border);border-radius:1.5rem;padding:2rem;opacity:0;transform:translateY(25px);transition:opacity .7s var(--ease),transform .7s var(--ease);box-shadow:0 4px 20px rgba(26,58,42,.05)}
 .tc.visible{opacity:1;transform:translateY(0)}
@@ -393,7 +340,7 @@ footer{background:var(--c-green-dark);border-top:1px solid rgba(255,255,255,.07)
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="hero-tag"><span class="dot"></span>Dietista-Nutricionista · Sevilla</div>
+    <div class="hero-tag"><span class="dot"></span>Dietista Titulado · Sevilla</div>
     <h1>Transforma tu<br><em>salud con</em><br>ciencia real.</h1>
     <p class="hero-sub">Sin dietas milagro ni restricciones absurdas. Un método basado en evidencia, adaptado a tu vida, que genera resultados que se mantienen.</p>
     <div class="hero-actions">
@@ -742,7 +689,7 @@ footer{background:var(--c-green-dark);border-top:1px solid rgba(255,255,255,.07)
     <a href="https://www.instagram.com" target="_blank">Instagram</a>
     <a href="https://calendly.com/inakisilvosab/30min" target="_blank">Reservar consulta</a>
   </div>
-  <div class="footer-legal">© 2025 Iñaki Silvosa · Dietista-Nutricionista · Sevilla</div>
+  <div class="footer-legal">© 2025 Iñaki Silvosa · Dietista Titulado · Sevilla</div>
 </footer>
 
 <script>
